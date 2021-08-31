@@ -38,7 +38,7 @@ public class Candidate {
 	public String getName() {
 		return name;
 	}
-
+	
 	/**
 	 * Get the candidate's party.
 	 * 
@@ -100,5 +100,10 @@ public class Candidate {
 			return false;
 		}
 	}
-
+	public static void main(String[] args) {
+		Candidate candidate1 = new Candidate("Indira Patel", "Demopublican", 35400);
+		System.out.println(candidate1.getName() + ": " + candidate1.getVotes());
+		System.out.println(candidate1.getParty());
+		System.out.println(candidate1.getClass());
+}
 }
